@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#92B974",
+              secondary: "#475347",
+              cream: "#E6EFE1",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-cream">
+    <header class="wikibowl bg-primary py-2 flex justify-center">
+      <h1 class="text-secondary text-lg center font-semibold">
+        wiki<span class="text-cream"
+          >Bowl<i class="ph-light ph-toilet"></i
+        ></span>
+      </h1>
+    </header>
+    <div class="flex justify-center flex-col">
+      <img class="size-80 mx-auto my-4" />
+      <h1 class="mx-auto font-mono text-xl" id="title">Loading...</h1>
+      <button
+        class="bg-secondary text-cream w-60 p-2 mx-auto my-4 hover:bg-cream hover:text-secondary border-black border-2 rounded"
+        id="open"
+      >
+        Generate
+      </button>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
